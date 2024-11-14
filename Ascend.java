@@ -8,7 +8,8 @@ public class Ascend {
 		int c = (int) (lim* Math.random());
 		int min = Math.min(c, Math.min(a,b));
 		int max = Math.max(c, Math.max(a,b));
-		int mid = a + b + c - min -max;a
-		System.out.println(a+" "+b+" "+c+" min is "+min);
-	}
+		int mid = a + b + c - min -max;
+		System.out.println(a+" "+b+" "+c +"\n"+ min+" "+mid+" "+max);
+	} 	
+		
 }
