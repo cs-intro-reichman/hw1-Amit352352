@@ -6,7 +6,7 @@ public class FVCalc {
 		int yearn =Integer.parseInt(args[2]);
 		double rate = (1+ (double) annualinterest/100);
 		double x = Math.pow(rate, (double) yearn);
-		double futurevalue = (curretValue*x); 
+		double futurevalue  =  (curretValue*x); 
 
 		System.out.println("After "+yearn+" years, $"+curretValue+" saved at "+annualinterest+"% will yield $"+(int) futurevalue);
 
