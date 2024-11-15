@@ -1,6 +1,16 @@
-// Computes the future value of a saving investment.
+
 public class FVCalc {
 	public static void main(String[] args){
-		// Replace this comment with your code
+		int curretValue = Integer.parseInt(args[0])  ;
+		double annualinterest = Double.parseDouble(args[1]);
+		int yearn =Integer.parseInt(args[2]);
+		//int annualinterest2 = (int) annualinterest ;
+		double rate = (1+ (double) annualinterest/100);
+		double x = Math.pow(rate, (double) yearn);
+		double futurevalue  =  (curretValue*x); 
+
+		System.out.println("After "+yearn+" years, a $"+curretValue+" saved at "+annualinterest+"% will yield $"+(int) futurevalue);
+
+
 	}
 }
