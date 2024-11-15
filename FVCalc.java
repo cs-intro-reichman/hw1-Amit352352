@@ -9,7 +9,7 @@ public class FVCalc {
 		double x = Math.pow(rate, (double) yearn);
 		double futurevalue  =  (curretValue*x); 
 
-		System.out.println("After "+yearn+" years, $"+curretValue+" saved at "+annualinterest2+"% will yield $"+(int) futurevalue);
+		System.out.println("After "+yearn+" years, a $"+curretValue+" saved at "+annualinterest+"% will yield $"+(int) futurevalue);
 
 
 	}
