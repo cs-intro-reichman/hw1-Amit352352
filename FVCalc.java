@@ -2,10 +2,10 @@
 public class FVCalc {
 	public static void main(String[] args){
 		int curretValue = Integer.parseInt(args[0])  ;
-		int annualinterest = Integer.parseInt(args[1]);
+		double annualinterest = Double.parseDouble(args[1]);
 		int yearn =Integer.parseInt(args[2]);
-		double annualinterest2 = Integer.parseInt(args[1]) ;
-		double rate = (1+ (double) annualinterest/100);
+		int annualinterest2 = (int) annualinterest ;
+		double rate = (1+ (double) annualinterest2/100);
 		double x = Math.pow(rate, (double) yearn);
 		double futurevalue  =  (curretValue*x); 
 
